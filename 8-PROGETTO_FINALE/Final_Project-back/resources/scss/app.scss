@@ -1,0 +1,280 @@
+@import "~bootstrap/scss/bootstrap";
+// **************************
+// STYLE RESET
+// **************************
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+// **************************
+// GENERALE
+// **************************
+.home-link {
+    text-decoration: none;
+    // font-weight: bold;
+    color: black;
+    &:hover {
+        color: red;
+    }
+}
+.auth-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.dd-create {
+    border: none;
+    background-color: #d0d4d8;
+}
+// **************************
+// WELCOME E LARAVEL AUT PAGES
+// **************************
+.log-section {
+    background-color: #2e5330 !important;
+    .log-card {
+        border: none;
+        background-color: #3e693c !important;
+        border-radius: 20px;
+        box-shadow: 7px 7px 3px #203a22;
+        .log-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+        .log-script {
+            position: relative;
+        }
+        .log-text_logo {
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            width: 270px;
+            z-index: 100;
+        }
+
+        .log-logo_small {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .log-btn-front {
+            color: rgba(246, 234, 107, 0.94);
+            border: 1px solid rgba(246, 234, 107, 0.94);
+            &:hover {
+                color: #67696a;
+                border: 1px solid #ffd700;
+                background-color: #ffd700;
+            }
+        }
+        .log-btn-create {
+            color: rgba(255, 252, 217, 0.94);
+            border: 1px solid rgba(255, 252, 217, 0.94);
+            &:hover {
+                color: #ffd700;
+                border: 1 px solid #67696a;
+                background-color: #67696a;
+            }
+        }
+        .log-link {
+            color: rgba(246, 234, 107, 0.94);
+            &:hover {
+                color: rgba(255, 252, 217, 0.94);
+            }
+        }
+        .log-login-btn {
+            background-color: #d1bb41;
+            font-weight: 300;
+
+            &:hover {
+                background-color: rgba(255, 252, 217, 0.94);
+                font-weight: 600;
+            }
+        }
+    }
+    .log-logo_small-reg {
+        width: 40px;
+    }
+}
+// **************************
+// DASHBOARD
+// **************************
+
+// **************************
+// SHOW
+// **************************
+.cv-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent !important;
+    border: none !important;
+    padding-right: 10px;
+    .cv-accordion {
+        border: none !important;
+    }
+    .show-profile-img {
+        max-width: 468px;
+        aspect-ratio: 1/1;
+    }
+}
+
+.navbar-style {
+    background-color: #2e5330;
+    padding: 5px 0;
+}
+
+.logo_navbar_small {
+    width: 70px;
+}
+.logo_navbar_text {
+    width: 150px;
+}
+
+.link-style {
+    color: rgba(255, 252, 217, 0.94);
+    &:hover {
+        color: rgba(239, 229, 115, 0.94);
+    }
+}
+
+.dropdown-style {
+    background-color: rgba(246, 234, 107);
+}
+
+.edit-button {
+    border: none;
+    background-color: #203a22;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.edit-link {
+    color: rgba(255, 252, 217, 0.94);
+    &:hover {
+        color: rgba(239, 229, 115, 0.94);
+    }
+}
+
+.modify-button {
+    border: none;
+    background-color: rgba(239, 229, 115, 0.94);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.modify-link {
+    color: #203a22;
+    font-weight: 600;
+    &:hover {
+        color: #67696a;
+    }
+}
+// MESSAGE SECTION
+body {
+    background-color: #2e5330 !important;
+}
+
+.message-style {
+    border: 3px solid rgba(246, 234, 107, 0.94);
+    box-shadow: 7px 7px 3px #203a22;
+}
+
+.text-style {
+    text-align: justify;
+}
+
+.style-show {
+    color: #d1bb41;
+}
+
+.style-arrow {
+    color: #203a22;
+}
+
+.scb-description {
+    text-align: justify;
+}
+.thumb {
+    width: 100px;
+    margin: 0 auto;
+}
+.thumb-text {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.scb-delete {
+    border: none !important;
+}
+// **************************
+// NAVBAR
+// **************************
+.navbar-toggler {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23FFD700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:focus .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23FF0000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.dashboard-img{
+    border-radius: 100%;
+    width: 200px;
+    border: 3px solid rgba(246, 234, 107, 0.94);
+}
+
+.card{
+    box-shadow: 7px 7px 3px #203a22;
+}
+
+.title-style{
+    color: #d1bb41;
+}
+
+.dashboard-button{
+    background-color: #203a22;
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: none;
+    
+}
+
+.dashboard-link{
+    color: rgba(246, 234, 107, 0.94);
+    &:hover{
+        color:  rgba(255, 252, 217, 0.94);
+    }
+}
+
+.sponsor-img{
+    border-radius: 100%;
+    width: 200px;
+}

@@ -1,0 +1,25 @@
+@use './partials/variables.scss' as *;
+
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+a{
+    color: currentColor !important;
+    text-decoration: none !important;
+}
+
+ul,
+ol,
+menu li{
+    list-style: none;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+.router{
+    color: currentColor;
+}
