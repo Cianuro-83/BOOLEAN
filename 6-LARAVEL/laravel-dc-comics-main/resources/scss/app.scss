@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+img {
+    max-width: 100%;
+}
+.scb-thumb {
+    width: 50px;
+}
+
+.truncate {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+.scb-row {
+    display: flex;
+    align-items: center;
+}
+
+.scb-action {
+    background-color: rgba(207, 207, 207, 0.231) !important;
+}
+
+.scb-btn {
+    width: 100px;
+}
+
+.scb-select {
+    width: 81%;
+    margin-left: 1%;
+}
+
+.scb-sel {
+    margin-left: 17%;
+}
