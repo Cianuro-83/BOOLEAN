@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.scb-list-item {
+  color: black;
+}
+
+.eseguito {
+  text-decoration: line-through;
+  color: lightgray;
+  font-weight: lighter;
+  background-color: rgb(180, 121, 121);
+}
+
+li {
+  display: pointer !important;
+}
+.fa-solid.fa-trash-can {
+  background-color: aliceblue;
+  padding: 25px;
+  color: red !important;
+}
+
+#basic-addon2 {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+#input-task {
+  background-color: aquamarine;
+}
