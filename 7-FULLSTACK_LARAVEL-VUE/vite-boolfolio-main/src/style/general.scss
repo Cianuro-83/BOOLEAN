@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+body {
+  background-color: rgb(50, 48, 48) !important;
+  color: white !important;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+menu,
+ul,
+ol {
+  list-style: none;
+}
+input,
+button {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
