@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: greenyellow;
+  font-weight: bold;
+}
+#lista {
+  column-count: 5;
+  column-gap: 30px;
+  column-rule: 1px dotted lightblue;
+}
+.container {
+  border: 2px dotted greenyellow;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 0.6797474254261364) 100%
+  );
+}

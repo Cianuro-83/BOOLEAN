@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkred;
+  color: white;
+}
+img {
+  width: 100%;
+}
+/* **************************
+DESCRIPTION
+************************** */
+.fa-train {
+  color: greenyellow;
+}
+.scb-container {
+  background-color: whitesmoke;
+  color: black;
+}
+.scb-col {
+  background-color: grey;
+}
+td.scb-central {
+  padding: 0 50px !important;
+}
+td.scbth {
+  text-align: center !important;
+}
+
+.scb-prize {
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
+
+.scb-qrcode {
+  width: 200px;
+}
+
+.scb-icon {
+  font-size: 40px;
+}
