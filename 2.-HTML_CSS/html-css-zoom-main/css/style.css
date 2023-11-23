@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  /* max-width: 100vh; */
+  color: white;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+.header {
+  text-align: right;
+  background-color: #4b4b4b;
+  margin-bottom: 50px;
+
+  font-size: 10px;
+  font-weight: 900;
+}
+.col85 {
+  flex-basis: 30%;
+  flex-grow: 1;
+  text-align: right;
+}
+.col15 {
+  flex-basis: 15%;
+}
+span.icon-h1,
+span.viewer,
+.icon-h2 {
+  padding-left: 10px;
+}
+.icon-h2 {
+  padding-right: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  /* background-color: rgb(114, 136, 155); */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col10 {
+  flex-basis: calc(100% / 7);
+}
+
+.card {
+  justify-content: space-between;
+  flex-basis: calc(100% / 7);
+  align-items: center;
+  position: relative;
+  margin: 5px;
+}
+.mic-name {
+  position: absolute;
+  bottom: 0px;
+  background-color: #616c79;
+  font-size: 8px;
+}
+
+/**************************
+FOOTER RULES
+  ***************************/
+.main-footer {
+  background-color: #222222;
+  position: relative;
+}
+
+.f-icons-sx {
+  width: 25%;
+  background-color: #222222;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.f-icons-center {
+  width: 50%;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-icons-dx {
+  width: 25%;
+  background-color: #222222;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer-ico {
+  text-align: center;
+  font-size: 10px;
+}
+.footer-text {
+  text-align: center;
+  font-size: 6px;
+}
+.col-f {
+  padding: 0px 2px;
+}
+.share-video {
+  color: #4ccc05;
+}
+.exit {
+  color: red;
+  background-color: #4a4a4a;
+  line-height: 3em;
+  padding: 0px 10px;
+}
+footer {
+  display: flex;
+
+  margin-top: 95px;
+}

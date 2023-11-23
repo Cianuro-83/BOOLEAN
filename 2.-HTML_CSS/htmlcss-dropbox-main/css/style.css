@@ -1,0 +1,496 @@
+/**************************
+RESET RULES
+***************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Almarai", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.row {
+  display: flex;
+}
+
+/**************************
+HEADER
+***************************/
+.menu {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  padding: 8px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav li {
+  display: inline-block;
+  padding: 10;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.main-header {
+  line-height: 3em;
+}
+.button-blu-start {
+  color: white;
+  background-color: #3462ff;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.button-blu {
+  color: white;
+  background-color: #3462ff;
+  white-space: nowrap;
+}
+.logo {
+  max-width: 70%;
+}
+/**************************
+CONTENITORI
+***************************/
+.big-cont {
+  max-width: 1234px;
+  margin: 0 auto;
+  /* background-color: greenyellow; */
+  padding-top: 90px;
+}
+.small-cont {
+  max-width: 1036px;
+  margin: 0 auto;
+  /* background-color: rgb(250, 217, 2); */
+  padding-top: 90px;
+}
+/**************************
+TITOLI
+***************************/
+.sub-section-title {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 20px;
+}
+.card-prize {
+  font-weight: bolder;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.card-duration {
+  font-weight: lighter;
+  font-size: 12px;
+  color: grey;
+  padding-top: 10px;
+}
+/**************************
+HERO
+***************************/
+.hero {
+  background-color: #b4d0e8;
+  height: 90vh;
+}
+
+.title-hero {
+  font-weight: bolder;
+  font-size: 4.5rem;
+  line-height: 1em;
+  padding-bottom: 40px;
+}
+.hero-box {
+  justify-content: space-between;
+  position: relative;
+}
+.box-text-hero {
+  flex-basis: 33%;
+}
+.box-img-hero {
+  flex-basis: 67%;
+}
+.box-text-hero > .button-blu {
+  line-height: 2.5em;
+  text-align: center;
+  width: 210px;
+  margin-top: 35px;
+}
+.annulla {
+  margin-top: 35px;
+}
+.lower-arrow {
+  font-weight: bolder;
+  font-size: 50px;
+  position: relative;
+  top: 10%;
+}
+/**************************
+OFFERTE
+***************************/
+.radio {
+  padding-top: 30px;
+}
+.f-annuale,
+.f-mensile {
+  display: inline-block;
+}
+.f-annuale {
+  padding-left: 50px;
+}
+.card {
+  justify-content: space-between;
+}
+li.icon {
+  gap: 10px;
+}
+.check {
+  color: #345cff;
+}
+.invisible {
+  color: white;
+}
+.col30 {
+  flex-basis: 32%;
+  border: 1px solid grey;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.row.card {
+  flex-wrap: wrap;
+}
+
+.abbonamento {
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: 1px solid #d8d8d9;
+  line-height: 2em;
+  padding: 0px;
+  display: block;
+}
+.feature {
+  margin-top: 50px;
+}
+.feature > li {
+  margin-bottom: 30px;
+}
+.list-feature {
+  margin-right: 20px;
+}
+.button-blu {
+  line-height: 2em;
+  text-align: center;
+}
+
+.choice {
+  margin-top: 30px;
+}
+.link-choice {
+  text-decoration: underline;
+  color: #3462ff;
+}
+hr {
+  border-bottom: 1px solid grey;
+  max-width: 50px;
+  margin-top: 30px;
+}
+.specification {
+  margin-top: 50px;
+}
+.check-list {
+  margin-top: 30px;
+  list-style-type: ;
+  padding-left: 20px;
+}
+.check-list > li {
+  padding-bottom: 30px;
+}
+.col70 {
+  flex-basis: 70%;
+  border: 1px solid black;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.col29s {
+  flex-basis: 30%;
+  border: 1px solid black;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.col-landscape {
+  flex-basis: 100%;
+  border: 1px solid grey;
+  color: black;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 2em;
+}
+.landscape-name {
+  border-bottom: 1px solid grey;
+}
+.land70 {
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 25px;
+}
+.land30 {
+  color: #152481;
+  text-align: left;
+  flex-basis: 30%;
+  padding-right: 10px;
+  padding-left: 35px;
+  padding-top: 25px;
+}
+.cont-lanscape {
+  justify-content: space-between;
+}
+.text-landscape {
+  padding-top: 40px;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+.card-orizzontale {
+  justify-content: space-between;
+}
+.button-blu.button-blu-c {
+  padding: 0 20px;
+}
+/**************************
+PARTNER
+***************************/
+.partner.small-cont {
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.partner-img,
+.partner-text {
+  flex-shrink: 0;
+}
+.partner-img {
+  flex-basis: 60%;
+  padding-right: 15px;
+}
+.partner-text {
+  flex-basis: 40%;
+  padding-left: 10px;
+}
+.partner h3 {
+  padding-top: 50px;
+}
+.partner {
+  padding-top: 25px;
+}
+.button-blu.partner {
+  padding-top: 0;
+  max-width: 50%;
+  background-color: white;
+  color: grey;
+  border: 1px solid grey;
+}
+img.partner {
+  display: block;
+  padding: 0;
+  max-width: 100%;
+}
+
+/**************************
+DROPBOX BUSINESS
+***************************/
+.dropbox-business.small-cont {
+  padding-top: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-business.col100 {
+  flex-basis: 100%;
+  padding-bottom: 25px;
+}
+.col-business.col30bus {
+  flex-basis: 30%;
+  padding-bottom: 25px;
+}
+.col100.sub-section-title {
+  font-size: 20;
+}
+.business-description {
+  padding-top: 25px;
+}
+.users {
+  padding-bottom: 50px;
+}
+.see-more {
+  line-height: 4em;
+  max-width: 30%;
+  color: #3462ff;
+  text-decoration: underline;
+}
+/**************************
+ABOUT US
+***************************/
+.container-about-us {
+  background-color: white;
+  max-width: 100%;
+}
+.col-about-us {
+  flex-basis: 23%;
+}
+.as-text {
+  flex-basis: 40%;
+  padding: 0 25px;
+}
+.sponsor {
+  padding: 25%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  min-width: 50%;
+}
+.sponsor.designit {
+  background-color: #a2d39b;
+  border: 10px solid #d0e9cd;
+}
+
+.sponsor.florida {
+  background-color: #2893ce;
+}
+.sponsor.arizona {
+  background-color: #61092b;
+}
+.sponsor.topps {
+  background-color: #fb231c;
+}
+.sponsor.wbr {
+  background-color: #d51c1f;
+}
+.sponsor.lplanet {
+  background-color: #152481;
+}
+.sponsor.hearst {
+  background-color: #b4d0e8;
+}
+.sponsor.ccq {
+  background-color: #fbd830;
+}
+.testimoninza {
+  max-width: 200px;
+  padding: 40px 0 1px 0;
+}
+.hr-testimonianza {
+  border: solid #d3d3d6;
+}
+.testimonianza-text {
+  padding-top: 40px;
+}
+.testimonianza-name {
+  padding-top: 40px;
+}
+img.designit,
+img.florida,
+img.arizona,
+img.toops,
+img.wbr,
+img.lplanet,
+img.hearst,
+img.ccq {
+  filter: invert(100);
+}
+/**************************
+JOIN US
+***************************/
+.join-us {
+  background-color: #b4d0e8;
+}
+.join-us.small-cont {
+  padding-bottom: 50px;
+}
+.button-blu.prova-free {
+  line-height: 3em;
+  padding: 0 25px;
+  margin-top: 0;
+  background-color: white;
+  color: black;
+  font-weight: lighter;
+  border: none;
+}
+.join-us.row {
+  justify-content: center;
+  align-items: flex-start;
+}
+.col-join {
+  flex-basis: 50%;
+}
+/**************************
+FAQ
+***************************/
+.faq-title {
+  padding-bottom: 25px;
+}
+.faq-box {
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  line-height: 5em;
+  border-bottom: 1px solid grey;
+}
+.faq-box-last {
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  line-height: 5em;
+  border-bottom: 1px solid grey;
+  margin-bottom: 100px;
+}
+
+/**************************
+FOOTER
+***************************/
+.main-footer {
+  background-color: black;
+  color: white;
+}
+footer > .big-cont {
+  padding-top: 50px;
+}
+.big-cont.footer {
+  justify-content: space-between;
+}
+.card-prize.footer {
+  padding-bottom: 25px;
+}
+li.footer {
+  line-height: 2.5em;
+  font-size: 10px;
+}
+
+/**************************
+SCELTA DELLA LINGUA
+***************************/
+hr.language {
+  border: 1px solid white;
+  max-width: 100px;
+}
+span.mondo,
+span.language,
+span.upper-icon {
+  display: inline-block;
+  padding: 20px 0;
+  padding-right: 10px;
+  font-weight: lighter;
+  font-size: 11px;
+  margin-bottom: 50px;
+}

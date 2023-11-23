@@ -1,0 +1,366 @@
+/* REGOLE DI RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+ul,
+ol,
+menu {
+  list-style: none;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* FINE REGOLE DI RESET */
+
+/* REGOLE DI DEBUG */
+header.debug {
+  min-height: 50px;
+  padding: 20px;
+  background-color: #add8e6;
+}
+
+.page-content.debug {
+  min-height: 100px;
+  background-color: white;
+}
+footer.debug {
+  min-height: 100px;
+  padding: 30px;
+  background-color: black;
+}
+
+.container.debug {
+  min-height: 30px;
+  background-color: #daa420;
+  border: 2px dashed black;
+}
+.col.debug {
+  border: 2px dotted black;
+}
+.s1-bg.debug {
+  min-height: 300px;
+  background-color: #000f8b;
+  padding: 30px 0px;
+}
+.s1-cont.debug {
+  background-color: rgb(238, 130, 238);
+  border: 2px dashed black;
+  text-align: center;
+  font-size: x-large;
+}
+
+.s2-bg.debug,
+.s4-bg.debug {
+  min-height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 0px;
+}
+.cols2a.debug,
+.cols4a.debug {
+  background-color: #1d90ff;
+  min-height: 300px;
+  font-size: x-large;
+}
+.cols2b.debug,
+.cols4b.debug {
+  background-color: rgb(238, 130, 238);
+  min-height: 300px;
+  font-size: x-large;
+}
+
+.s3-bg.debug,
+.s5-bg.debug {
+  min-height: 300px;
+  background-color: #5e1b1b;
+  padding: 30px 0px;
+}
+
+.cols3a.debug {
+  background-color: rgb(238, 130, 238);
+  min-height: 300px;
+  font-size: x-large;
+}
+.cols3b.debug {
+  background-color: #1d90ff;
+  min-height: 100px;
+  font-size: x-large;
+}
+.s5 .container.debug {
+  background-color: green;
+  min-height: 300px;
+  padding: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.colf1a.debug {
+  background-color: #ef8080;
+  font-size: x-large;
+}
+.colf1b.debug,
+.colf1c.debug,
+.colf1d.debug,
+.colf1e.debug {
+  background-color: #20b2aa;
+  font-size: x-large;
+  min-height: 300px;
+}
+
+.colf2.debug {
+  background-color: aquamarine;
+  color: black;
+  min-height: 50px;
+  margin-top: 20px;
+}
+
+.colf2a.debug,
+.colf2b.debug {
+  background-color: rgb(199, 194, 194);
+  margin: 10px 0;
+}
+
+/* REGOLE DI PROGETTO */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col {
+  padding: 10px;
+}
+
+.row10 {
+  flex-basis: 10px;
+}
+.row15 {
+  flex-basis: 15%;
+}
+.row40 {
+  flex-basis: 40%;
+}
+
+.row60 {
+  flex-basis: 60%;
+}
+.row70 {
+  flex-basis: 70%;
+}
+
+.row100 {
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #2f5ee8;
+  padding: 10px;
+}
+header .container {
+  color: white;
+}
+.link {
+  text-align: center;
+  align-items: center;
+}
+ul.menu li {
+  display: inline;
+  padding: 15px;
+}
+.entra {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.s1-bg {
+  min-width: 100%;
+  min-height: 650px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-color: #2f5ee8;
+}
+.s1-cont {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 300px;
+  padding: 30px;
+  /* background-image: url(../img/jumbo.png);
+  background-size:cover; */
+}
+ul.menu li {
+  display: inline;
+  padding: 15px;
+}
+
+.disclaimer {
+  color: white;
+  font-weight: bolder;
+  font-size: 45px;
+  padding-top: 200px;
+}
+p.disclaimer {
+  padding-top: 15px;
+  font-weight: lighter;
+  font-size: 19px;
+}
+.download,
+.browser {
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 25px;
+  border: none;
+}
+.download {
+  background-color: white;
+  margin-right: 10px;
+}
+.browser {
+  color: white;
+  background-color: black;
+  margin-left: 10px;
+}
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.description {
+  font-weight: lighter;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.s2-bg {
+  height: 700px;
+  padding: 30px 0px 100px 0px;
+}
+.s4-bg {
+  height: 700px;
+  margin-top: 200px;
+}
+.cols2a,
+.cols4a {
+  min-height: 300px;
+}
+.cols2b,
+.cols4b {
+  min-height: 300px;
+}
+
+.s3-bg,
+.s5-bg {
+  margin-top: 0px;
+  min-height: 100px;
+  padding: 100px 0px;
+  background-color: #f6f6f6;
+  border: 50px solid red;
+  border-image-source: url(../img/wave.svg);
+  border-image-slice: 150 0 0 0;
+  border-image-width: 200px 0px 0px 0px;
+  border-image-repeat: round;
+  border-image-outset: 150px;
+}
+/* .s6 {
+  margin-top: 0px;
+  min-height: 100px;
+  padding: 100px 0px;
+  background-color: #f6f6f6;
+  border: 50px solid red;
+  border-image-source: url(../img/wave-reverse.svg);
+  border-image-slice: 0 0 36 11;
+  border-image-width: 200px 0px 0px 0px;
+  border-image-repeat: round;
+  border-image-outset: 1210px; */
+}
+.cols3a {
+  min-height: 300px;
+}
+.cols3b {
+  min-height: 300px;
+}
+
+.s5 .container {
+  min-height: 300px;
+  padding: 100px;
+  text-align: center;
+  font-size: 1px;
+}
+.text-calltodownload {
+  background-image: url(../img/stars.svg);
+  background-position: center;
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+}
+.scarica-per-mac {
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #7289d9;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+.fc1 {
+  border-bottom: 1px solid #4f5d8c;
+  align-items: flex-start;
+}
+.colf1a,
+.colf1b,
+.colf1c,
+.colf1d,
+.colf1e {
+  min-height: 300px;
+  margin-bottom: 30px;
+}
+.colf2a,
+.colf2b {
+  margin: 10px 0;
+  /* justify-content: space-between; */
+}
+.tit-f {
+  color: #7289d9;
+  font-size: 15px;
+}
+.tit-big {
+  font-size: 25px;
+  color: #7289d9;
+}
+.li-foot {
+  padding: 10px 0;
+  line-height: 40px;
+}
+.italia {
+  width: 20px;
+  padding-top: 20px;
+}
+.social {
+  display: block;
+  max-width: 40%;
+  padding-top: 25px;
+}
+
+.registrati {
+  color: white;
+  background-color: #7289d9;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.brand/* FINE REGOLE PROGETTO */;

@@ -1,0 +1,116 @@
+@media screen and (max-width: 552px) {
+  /**********************
+LAYOUT  
+*********************/
+  .menu {
+    flex-basis: 50px;
+  }
+  .upgrade {
+    width: calc(100% - 50px);
+  }
+
+  /* **************************
+  PLAYER
+  ************************** */
+  .volume-max {
+    width: 50px;
+  }
+  .volume-attuale {
+    width: 15px;
+  }
+  .player-riproduzione {
+    flex-basis: 35%;
+  }
+
+  .pulsanti-riproduzione {
+    gap: 5px;
+    font-size: 8px;
+  }
+  .play-riproduzione {
+    font-size: 15px;
+    margin: 0 3px;
+    margin-bottom: 5px;
+  }
+
+  /* **************************
+SIDEBAR
+************************** */
+  .logo {
+    display: none;
+  }
+  .logo-piccolo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-small {
+    padding: 5px 0;
+    width: 28px;
+  }
+
+  .logo-small img {
+    width: 30px;
+  }
+
+  .home span,
+  .find span,
+  .library .library-description {
+    display: none;
+  }
+
+  .navigation .home {
+    text-align: center;
+    font-weight: 900;
+    border-left: 0;
+    padding: 0;
+  }
+  .playlist {
+    display: none;
+  }
+
+  .download {
+    display: none;
+  }
+  .download-ico {
+    font-size: 10px;
+  }
+  .install-app::after,
+  .user-name {
+    display: none;
+  }
+  .install-app,
+  .user {
+    text-align: center;
+    padding: 0;
+  }
+
+  .user img {
+    max-width: 50%;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+  }
+  /* **************************
+ALBUM NAV BAR
+************************** */
+  .album-navbar {
+    font-size: 14px;
+    gap: 50px 20px;
+  }
+
+  .slider-tot {
+    padding: 3px;
+  }
+  .slider-actual {
+    padding: 2px;
+  }
+
+  .ball {
+    font-size: 12px;
+    bottom: -4px;
+  }
+
+  .ball-volume {
+    bottom: -3px;
+    font-size: 10px;
+  }
+}

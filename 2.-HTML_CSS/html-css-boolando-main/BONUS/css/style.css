@@ -1,0 +1,202 @@
+/**************************
+RESET RULES
+  ***************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+/**************************
+FLEX RULES
+  ***************************/
+.row {
+  display: flex;
+}
+.main-header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer .row {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s1 .row,
+.s2 .row {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col-s {
+  flex-basis: 32%;
+  max-height: 500px;
+}
+.col100 {
+  flex-basis: 100px;
+}
+
+/**************************
+HEADER RULES
+  ***************************/
+li {
+  display: inline;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.header-bg {
+  background-color: #fb6900;
+  color: white;
+  padding: 15px 0;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+/**************************
+MAIN RULES
+  ***************************/
+.main-bg {
+  background-color: #ffffff;
+  padding-top: 100px;
+}
+.s1,
+.s2 {
+  padding: 10px 0;
+}
+.card p {
+  padding: 3px 0;
+}
+img {
+  max-height: 500px;
+}
+.marca {
+  font-weight: lighter;
+  font-size: 10px;
+}
+.prodotto {
+  font-weight: bolder;
+  font-size: 15px;
+}
+.sconto {
+  color: red;
+  font-weight: bolder;
+  font-size: 11px;
+}
+strike {
+  color: black;
+  font-weight: lighter;
+}
+.saldo,
+.sosten {
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 1.5em;
+  border: none;
+  padding: 0 15px;
+}
+.saldo {
+  background-color: #fb2201;
+  position: absolute;
+  bottom: 100px;
+}
+.sosten {
+  background-color: #008002;
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+}
+.sos {
+  background-color: #008002;
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+}
+.cuore {
+  color: black;
+  border: none;
+  font-size: 30px;
+  padding: 0px 15px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+/**************************
+FOOTER RULES
+  ***************************/
+.footer-bg {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 25px 0;
+}
+.brand {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.privacy {
+  font-size: 10px;
+}
+.priv-space {
+  padding: 0 5px;
+}
+
+.follow {
+  font-size: 10px;
+}
+.social-icons {
+  padding-top: 10px;
+}
+
+.soc {
+  background-color: white;
+  width: 25px;
+  margin: 5px;
+}
+.follow {
+  text-align: center;
+  padding-bottom: 1em;
+}
+/**************************
+HOVER CAMBIO IMMAGINE RULES
+  ***************************/
+.img1 {
+  display: block;
+}
+.img2 {
+  display: none;
+}
+.cambio-img:hover .img1 {
+  display: none;
+}
+.cambio-img:hover .img2 {
+  display: block;
+}

@@ -1,0 +1,71 @@
+@media screen and (max-width: 638px) {
+  /**********************
+PLAYER  
+*********************/
+  .player-brano {
+    flex-basis: 130px;
+  }
+  .player-opzioni {
+    flex-basis: 130px;
+  }
+
+  .volume-max {
+    width: 50px;
+  }
+  .volume-attuale {
+    width: 20px;
+  }
+  .shuffle-riproduzione,
+  .rewind-riproduzione,
+  .forward-riproduzione,
+  .repeat-riproduzione {
+    font-size: 15px;
+  }
+  .play-riproduzione {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin: 0 5px;
+  }
+
+  /* **************************
+ALBUM NAV BAR
+************************** */
+  .album-navbar {
+    font-size: 12px;
+    gap: 50px 18px;
+  }
+
+  /* **************************
+ALBUM RECENTLY PLAYED
+************************** */
+  .recently-played-card {
+    width: calc(100% / 2 - 15px);
+  }
+  /* **************************
+ALBUM CREATO PER JOHN DOE
+************************** */
+  .john-doe-card,
+  .more-popular-card {
+    width: calc(100% / 2 - 15px);
+  }
+  /* **************************
+ALBUM ARTISTI + POPOLARI
+************************** */
+
+  .slider-tot {
+    padding: 3px;
+  }
+  .slider-actual {
+    padding: 2px;
+  }
+
+  .ball {
+    font-size: 12px;
+    bottom: -4px;
+  }
+
+  .ball-volume {
+    bottom: -3px;
+    font-size: 10px;
+  }
+}

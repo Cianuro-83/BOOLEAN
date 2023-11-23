@@ -1,0 +1,62 @@
+/*************************** 
+RESET RULES 
+***************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************************** 
+TABLET: 768px
+***************************/
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/*************************** 
+MOBILE: 480px
+***************************/
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+  .row {
+    flex-direction: column;
+    row-gap: 100px;
+  }
+
+  .card {
+    width: 400px;
+  }
+  h2.text-center {
+    color: white;
+    font-size: 40px;
+  }
+  .col.col-left {
+    align-self: center;
+    width: 400px;
+    flex-basis: 100%;
+  }
+  .why-us .col-left {
+    width: 100%;
+  }
+  .col.col-right p,
+  .col.col-right h3 {
+    align-self: center;
+    width: 400px;
+  }
+  .col.col-right h3 {
+    font-size: 35px;
+  }
+  .why-us {
+    background-color: #222222;
+    margin-top: -50px;
+    padding-bottom: 5rem;
+  }
+}

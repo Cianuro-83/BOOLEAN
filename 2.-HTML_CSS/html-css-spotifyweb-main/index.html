@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <script src="https://kit.fontawesome.com/6b35d32b47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/a-style.css">
+    <link rel="stylesheet" href="./css/b-medium.css">
+    <link rel="stylesheet" href="./css/c-small.css">
+    <link rel="stylesheet" href="./css/d-xs.css">
+
+</head>
+
+<body>
+    <div class="main-content">
+        <!-- **************************
+        SIDEBAR
+        ************************** -->
+        <div class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-big" src="./img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="logo-piccolo">
+                <a class="logo-small" href="#">
+
+                    <img src="./img/logo-small.svg" alt="">
+                </a>
+            </div>
+            <div class="navigation">
+                <div class="home">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="find">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Cerca</span>
+                    </a>
+                </div>
+                <div class="library">
+                    <a href="#">
+                        <span class="libr-ico">||\</span>
+                        <span class="library-description">La tua libreria</span>
+                    </a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="#">
+                    <h4>playlist</h4>
+                </a>
+                <div class="new-playlist">
+                    <a href="#">
+                        <p class="create-pl">+</p>
+                        <span class="create-pl-label">Crea Playlist
+                        </span>
+                    </a>
+                </div>
+                <div class="playlist-name">
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="install-app">
+                <a href="#">
+                    <i class="download-ico fa-regular fa-circle-down"></i>
+                    <span class="download">Installa app</span>
+                </a>
+
+            </div>
+            <div class="user">
+                <a href="#">
+                    <img class="user.ico" src="./img/LOGO CIANURO CODING_ICONA ROUND 25X25.png"
+                        alt="logo Simone Cianuro Buzzeo">
+                    <div class="user-name">
+                        <h4>Simone Cianuro Buzzeo</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="music">
+            <div class="upgrade">
+                <a href="#">
+                    <p>effettua l'upgrade</p>
+                </a>
+            </div>
+            <!-- **************************
+            ALBUM
+            ************************** -->
+            <div class="album">
+                <div class="album-nav">
+                    <nav>
+                        <ul class="album-navbar">
+                            <li class="album-navbar-evidence">in evidenza
+                            </li>
+                            <li class="album-navbar-podcast">podcast</li>
+                            <li class="album-navbar-classifiche">classifiche</li>
+                            <li class="album-navbar-generi">generi e mood</li>
+                            <li class="album-navbar-new-arrive">nuove uscite</li>
+                            <li class="album-navbar-scopri">scopri</li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- **************************
+ALBUM RECENTLY PLAYED
+************************** -->
+
+                <div class="recently-played-container">
+                    <div class="recently-played-title">
+                        <h2>Recently played</h2>
+                    </div>
+                    <div class="recently-played-slider">
+                        <div class="recently-played-card">
+                            <div>
+                                <figure class="switch">
+                                    <img class="img-card" src="./img/metal_lifting.jpg" alt="cover album heavy metal">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Heavy Metal
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recently-played-card">
+                            <div>
+                                <figure class="switch">
+                                    <img src="./img/stranger.jpeg" alt="cover album stranger">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Stranger Thing. Vol. 1 (a Netflix Original Series Soundtrack)
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Kyle Dixon & Michael Stein
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recently-played-card">
+                            <div>
+                                <figure class="switch">
+                                    <img src="./img/aquietplace.jpeg" alt="cover a quiet place">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    A quiet place
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recently-played-card">
+                            <fig>
+                                <figure class="switch">
+                                    <img src="./img/split.jpeg" alt="cover album split">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Split
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Subtitle
+                                </p>
+                            </fig>
+                        </div>
+                        <div class="recently-played-card">
+                            <div>
+                                <figure class="switch">
+                                    <img src="./img/cure.jpeg" alt="cover album A cure for wellness">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    A cure for wellness
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recently-played-card last">
+                            <div>
+                                <figure class="switch">
+                                    <img class="cover" src="./img/sinister.jpeg" alt="cover album sinister">
+                                    <div class="in-riproduzione">
+                                        <i class="in-riproduzione fa-solid fa-volume-high"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Sinister
+                                </h4>
+                                <p class="recently-played-album-artist">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- **************************
+ALBUM CREATO PER JOHN DOE
+************************** -->
+                <div class="john-doe-container">
+                    <div class="john-doe-title">
+                        <h2>Creato per Simone Cianuro Buzzeo </h2>
+                        <div class="john-doe-subtitle">
+                            <p>Più ascoltati, più accurati saranno i suggerimenti</p>
+                        </div>
+                    </div>
+                    <div class="john-doe-slider">
+                        <div class="john-doe-card">
+                            <div>
+                                <figure class="switch">
+                                    <img src="./img/radar.jpeg" alt="cover album Releas Radar">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Releas Radar
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="john-doe-card">
+                            <div>
+                                <figure class="switch">
+                                    <img src="./img/mixdaily.jpeg" alt="cover album Dayly mix 1">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Daily mix 1
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- **************************
+ALBUM ARTISTI + POPOLARI
+************************** -->
+                <div class="more-popular-container">
+                    <div class="more-popular-title">
+                        <h2>Artisti più popolari </h2>
+                        <div class="more-popular-subtitle">
+                            <p>Più ascoltati, più accurati saranno i suggerimenti</p>
+                        </div>
+                    </div>
+                    <div class="more-popular-slider">
+                        <div class="more-popular-card">
+                            <div>
+                                <figure class="switch">
+                                    <img class="cover-round" src="./img/youg.jpeg"
+                                        alt="cover album Young and beauetiful di Lana Del Rey">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Lana Del Rey
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="more-popular-card">
+                            <div>
+                                <figure class="switch">
+                                    <img class="cover-round" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                    <div class="play-mouse">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                                <h4 class="recently-played-album-title">
+                                    Ludovico Einaudi
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **********************
+    PLAYER SINISTRO
+    ********************* -->
+    <div class="player-content">
+        <div class="player-brano">
+            <div class="brano">
+                <div class="brano-thumb">
+                    <img src="./img/sinister.jpeg" alt="sinister cover">
+                </div>
+                <div class="brano-title">
+                    <h5>Sinister</h5>
+                    <a href="#">
+                        <p class="brano-name">Brano name</p>
+                    </a>
+                </div>
+            </div>
+            <div class="brano-icone">
+                <a href="#">
+                    <i class="fa-regular fa-heart cuore"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-folder cartella"></i>
+                </a>
+
+                <!-- **************************
+PLAYER RIPRODUZIONE: PULSANTI
+************************** -->
+            </div>
+        </div>
+        <div class="player-riproduzione">
+            <div class="pulsanti-riproduzione">
+                <div class="shuffle-riproduzione">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="rewind-riproduzione">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="play-riproduzione">
+
+                    <i class="fa-regular fa-circle-play"></i>
+
+                </div>
+                <div class="forward-riproduzione">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="repeat-riproduzione">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+            <!-- **************************
+            PLAYER: BARRA DI RIPRODUZIONE
+            ************************** -->
+            <div class="barra-riproduzione">
+                <div class="riprodotto-riproduzione">
+                    <p>0:25</p>
+                </div>
+                <div class="slider-riproduzione">
+                    <div class="slider-tot">
+                        <a href="#">
+                            <div class="slider-actual">
+                                <i class="fa-solid fa-circle ball"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="fine-riproduzione">
+                    <p>4:35</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- **************************
+PLAYER OPZIONI
+************************** -->
+        <div class="player-opzioni">
+            <div class="player-list">
+                <i class="fa-solid fa-list"></i>
+            </div>
+            <div class="player-display">
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <div class="player-volume">
+                <div>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="player-volume">
+                    <div class="volume-max">
+                        <a href="#">
+                            <div class="volume-attuale">
+                                <i class="fa-solid fa-circle ball-volume"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
