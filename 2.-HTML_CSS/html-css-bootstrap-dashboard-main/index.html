@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Dashboard</title>
+    <!-- BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-md.css">
+    <link rel="stylesheet" href="./css/style-lg.css">
+    <!-- FONTAWESOME FREE -->
+    <script src="https://kit.fontawesome.com/6b35d32b47.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- **************************
+    HEADER
+    ************************** -->
+    <header>
+        <div class="scb-debug scb-main-header">
+            <div class="scb-logo scb-debug">
+                <nav class="navbar bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="d-none d-lg-block" src="./img/logo.svg" alt="boolean" width="200px">
+                            <img class="d-lg-none scb-logo-mobile" src="./img/mobile-logo.png" alt="boolean"
+                                max-height="30px" width="35px">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="scb-search-bar scb-debug">
+                <form class="container-fluid">
+
+                </form>
+
+                <div class="input-group scb-serch-cont">
+                    <span class="input-group-text scb-serch" id="basic-addon1">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i></span>
+                    </a>
+                    <input type="text" class="form-control scb-serch" placeholder="Prova a cercare Lezioni di Laravel"
+                        aria-label="search" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="scb-header-nav scb-debug">
+                <div class="container-fluid p-0">
+                    <div class="row justify-content-center align-items-center p-0">
+                        <div class="col-3 d-none d-lg-block p-0 m-0">
+                            <div class="dropdown p-0 m-0">
+                                <i class="fa-solid fa-list" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 d-none d-lg-block p-0 m-0">
+                            <div class="dropdown">
+                                <i class="fa-solid fa-question" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 d-none d-lg-block p-0 m-0">
+                            <div class="dropdown">
+                                <i class="fa-solid fa-ellipsis-vertical " type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 p-0">
+                            <div class="dropdown">
+                                <i class="fa-solid fa-bell text-warning " type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"></i>
+                                <ul class="dropdown-menu scb-drop">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </header>
+    <!-- **************************
+MAIN
+************************** -->
+    <main>
+        <div class="scb-debug scb-main-cont">
+            <!-- **************************
+        ASIDE
+        ************************** -->
+            <div class="scb-aside scb-debug justify-content-between align-items-center py-3">
+                <div class="scb-aside-menu scb-debug">
+                    <div class="container">
+                        <div class="row scb-aside-nav justify-content-center p-0">
+                            <div class="col-2 scb-debug ps-0">
+                                <a href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </div>
+                            <div class="col-8 d-none d-lg-block scb-debug">
+                                <a href="#">
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row scb-aside-nav justify-content-center px-0 py-2">
+                            <div class="col-2 scb-debug ps-0 ">
+                                <a href="#">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </a>
+                            </div>
+                            <div class="col-8 d-none d-lg-block scb-debug">
+                                <a href="#">
+                                    <span>Stats</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row scb-aside-nav justify-content-center p-0">
+                            <div class="col-2 scb-debug ps-0">
+                                <a href="#">
+                                    <i class="fa-solid fa-signal"></i>
+                                </a>
+                            </div>
+                            <div class="col-8 d-none d-lg-block scb-debug">
+                                <a href="#">
+                                    <span>Signals</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scb-admin scb-debug">
+                    <div class="container">
+                        <div class="row justify-content-center p-0">
+                            <div class="col-2 scb-debug ps-0">
+                                <a href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                </a>
+                            </div>
+                            <div class="col-8 d-none d-lg-block scb-debug">
+                                <a href="#">
+                                    <span>Admin</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- **************************
+        FASCIA BLU
+        ************************** -->
+
+            <div class="scb-body-content scb-debug">
+                <div class="container-fluid bg-primary py-3">
+                    <div class="row justify-content-between">
+                        <div class="col-12 order-md-last col-md-4 scb-debug">
+                            <div class="row align-items-center">
+                                <div class="col-12 d-flex align-items-center  scb-debug ">
+                                    <h2 class="scb-new-student py-2 fw-bolder">Nuovo Studente</h2>
+                                    <div class="ps-3">
+                                        <i class="fa-regular fa-square-plus" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-4 scb-debug">
+                            <div class="row">
+                                <div class="col-12 scb-debug">
+                                    <h1 class="d-inline fw-bold fs-2">Boolean </h1>
+                                    <span class="badge rounded-pill scb-babge fw-semibold">Piano blaze</span>
+                                </div>
+                                <div class="col scb-debug d-flex">
+                                    <div class="d-lg-none">
+                                        <span class="badge rounded-pill scb-babge fw-semibold">3 app</span> <span
+                                            class="scb-babge-2">>></span>
+                                    </div>
+                                    <div class="fw-bold px-1 d-lg-none">
+                                        <i class="fa-solid fa-plus scb-babge scb-round"></i>
+                                    </div>
+                                    <div class="d-none d-lg-block">
+                                        <span class="badge rounded-pill scb-babge fw-semibold">3 app</span> <span
+                                            class="scb-babge-2">>></span>
+                                        <span class="badge rounded-pill scb-babge fw-semibold ">Boolean mobile
+                                            app</span>
+                                        <span class="badge rounded-pill scb-babge fw-semibold ">Boolean web app</span>
+                                        <span class="badge rounded-pill scb-babge fw-semibold ">Boolean blog app</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-4 my-3 my-md-0">
+                            <div class="row row-cols-1">
+                                <div class="col scb-debug ">
+                                    <h2 class="scb-online-students fw-bold ">Studenti online negli ultimi 30 minuti</h2>
+                                </div>
+                                <div class="col scb-debug">
+                                    <h3 class="display-5 fw-semibold">125</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- **************************
+                DASHBOARD: TABELLA DA MOBILE
+                ************************** -->
+
+                <div class="container-fluid scb-dashboard pt-3">
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <div class="card d-md-none">
+                                <div class="card-header fs-3 fw-medium">
+                                    Prossime classi
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-hover scb-table-small">
+                                        <thead>
+                                            <tr>
+                                                <th class="fw-normal" scope="col">Classe</th>
+                                                <th class="fw-normal text-center" scope="col">Stato</th>
+                                                <th class="fw-normal text-center" scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 75</th>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 76</th>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 77</th>
+                                                <td class="text-center"><span
+                                                        class="badge text-bg-warning">Process</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 78</th>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 79</th>
+                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 80</th>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 81</th>
+                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe 82</th>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- **************************
+                            TABELLA TABLET
+                            ************************** -->
+
+                            <div class="card d-none d-md-block">
+                                <div class="card-header fs-3 fw-medium">
+                                    Prossime classi
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-hover scb-table-medium">
+                                        <thead>
+                                            <tr>
+                                                <th class="fw-normal" scope="col">Classe</th>
+                                                <th class="fw-normal text-center" scope="col">
+                                                    Data
+                                                    inizio</th>
+                                                <th class="fw-normal text-center" scope="col">
+                                                    ROI
+                                                </th>
+                                                <th class="fw-normal text-center" scope="col">Stato</th>
+                                                <th class="fw-normal text-center" scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    75</th>
+                                                <td class="text-center">15 Feb 2021</td>
+                                                <td class="text-center ">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    76</th>
+                                                <td class="text-center">16 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    77</th>
+                                                <td class="text-center">17 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span
+                                                        class="badge text-bg-warning">Process</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    78</th>
+                                                <td class="text-center">18 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    79</th>
+                                                <td class="text-center">19 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    80</th>
+                                                <td class="text-center">20 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    81</th>
+                                                <td class="text-center">21 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fw-normal" scope="row"><i
+                                                        class="fa-solid fa-users me-1"></i>Classe
+                                                    82</th>
+                                                <td class="text-center">22 Feb 2021</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="text-center"><i class="fa-solid fa-pencil me-1"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- **************************
+DASHBOARD: ACCORDION
+************************** -->
+                            <div class="card my-4">
+                                <div class="card-header text-uppercase fs-3 fw-medium">
+                                    f.a.q.
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Reprehenderit ratione saepe a fugiat, totam amet
+                                                    provident dolore inventore voluptatibus aspernatur sapiente eligendi
+                                                    ullam quod consequuntur, ipsum voluptatem dolor quo aliquid!</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Delectus tenetur nobis explicabo magni quibusdam?
+                                                    Distinctio enim quo sint ut fuga, inventore amet explicabo ullam
+                                                    deserunt aut. Facere mollitia quod inventore.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Commodi alias repellendus itaque id doloremque.
+                                                    Consequuntur, quas libero? Alias quo dolorem culpa veniam cum.
+                                                    Consequatur, optio consectetur delectus nesciunt nulla aperiam!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- **************************
+                        DASBOARD: TO DO
+                    ************************** -->
+                        <div class="col">
+                            <div class="card mb-4">
+                                <div class="card-header fs-3 fw-medium">
+                                    Todo
+                                </div>
+                                <div class="card-body">
+                                    <div class="scb-todos">
+
+                                        <div class="form-check scb-todo">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault3">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Kickoff nuove classi
+                                            </label>
+                                        </div>
+                                        <div class="form-check scb-todo">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Lezione su Bootstrap 5 in classe #86
+                                            </label>
+                                        </div>
+                                        <div class="form-check scb-todo">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked2">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Controllare username github studenti
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- **************************
+                            DASHBOARD: GRAFICO
+                            ************************** -->
+                            <div class="card">
+                                <div class="card">
+                                    <img src=" ./img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text fw-medium">Lista degli utenti attivi in piattaforma
+                                            nell'ultimo mese
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 800</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#"
+                                            class="card-link text-decoration-underline text-primary scb-report">Visualizza
+                                            report approfondito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <!-- **************************
+OFF CANVAS
+************************** -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"></i>
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="scb-debug mb-3">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput"
+                                placeholder="Inserisci il tuo nome">
+                            <label for="floatingInput">Nome</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput2"
+                                placeholder="Inserisci il tuo cognome">
+                            <label for="floatingInput">Cognome</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">@</span>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputGroup1"
+                                    placeholder="Username">
+                                <label for="floatingInputGroup1">Inserisci la tua Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Inserisi la tua Password</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 scb-debug d-flex flex-wrap">
+                        <div class="row row-cols-1">
+                            <div class="col-12 me-3">Sesso:</div>
+                        </div>
+                        <div class="form-check me-3 ">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                UOMO
+                            </label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label " for="flexRadioDefault2">
+                                DONNA
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault">
+                                ALTRO
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Età</option>
+                            <option value="1">15-20 anni</option>
+                            <option value="2">20-25 anni</option>
+                            <option value="3">25-30 anni</option>
+                            <option value="4">30-35 anni</option>
+                            <option value="4">35-40 anni</option>
+                            <option value="5">40-45 anni</option>
+                            <option value="6">45-50 anni</option>
+                            <option value="7">50-55 anni</option>
+                            <option value="8">55-60 anni</option>
+                            <option value="9">oltre 60 anni</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row row-cols-1 scb-debug">
+                    <div class="mb-3 scb-debug">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput6"
+                                placeholder="Inserisci il tuo indirizzo">
+                            <label for="floatingInput">Indirizzo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 scb-debug">
+                    <div class="mb-3 scb-debug">
+                        <input type="text" class="form-control" id="floatingInput0" placeholder="Città">
+                        <label for="floatingInput"></label>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Stato</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Grecia</option>
+                            <option value="3">Inghilterra</option>
+                            <option value="4">Francia</option>
+                            <option value="4">Germania</option>
+                            <option value="5">Russia</option>
+                            <option value="6">Altro Stato Europeo</option>
+                            <option value="7">Continente Americano</option>
+                            <option value="8">Continente Africano </option>
+                            <option value="9">Continente Asiatico</option>
+                            <option value="10">Continente Australiano</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 scb-debug">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>C.a.p.</option>
+                            <option value="1">35586248</option>
+                            <option value="2">35628848</option>
+                            <option value="3">35622848</option>
+                            <option value="4">32562488</option>
+                            <option value="4">35600248</option>
+                            <option value="5">35146248</option>
+                            <option value="6">35536248</option>
+                            <option value="7">35624848</option>
+                            <option value="8">35746248</option>
+                            <option value="9">35386248</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row row-cols-1 scb-debug">
+                    <div class="mb-3 scb-debug">
+                        <div class="input-group mb-3 row-cols-2">
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row row-cols-1 scb-debug">
+                    <div class="mb-3 scb-debug">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Abilita per proseguire</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row scb-debug">
+                    <div class="col scb-debug">
+                        <button class="btn btn-primary scb-btn-save me-1" type="button">Salva ed invia</button>
+                        <button class="btn btn-warning" type="button">Svuota form</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- BOOTSTRAP 5 JAVA SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

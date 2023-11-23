@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(152, 149, 149);
+}
+[class^="col"] {
+  padding: 15px;
+}
+.container {
+  max-width: 400px;
+}
+.b {
+  background-color: black;
+}
+
+.t {
+  background-color: transparent;
+}
+.w {
+  background-color: white;
+}
+
+.y {
+  background-color: #f7bb05;
+}
+
+.c {
+  animation: star infinite 4s ease-in-out;
+}
+.d {
+  animation: star infinite 5s ease-in-out;
+  animation-delay: 1s;
+}
+.e {
+  animation: star infinite 5.5s ease-in-out;
+  animation-delay: 1.5s;
+}
+@keyframes star {
+  0% {
+    opacity: 2%;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 25%;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 50%;
+    transform: scale(1.1);
+  }
+  75% {
+    opacity: 75%;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,12 @@
+@media all and (min-width: 768px) {
+  /* INIZIO MEDIA QUERY TABLET */
+  /* **************************
+FASCIA BLU
+************************** */
+  /* .scb-online-students { */
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  /* CHIUSURA MEDIA QUERY TABLET */
+}

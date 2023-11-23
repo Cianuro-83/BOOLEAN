@@ -1,0 +1,188 @@
+/* **************************
+SERVICE RULES
+************************** */
+body {
+  overflow-x: hidden;
+}
+:root {
+  --nav-color: #2b3e50;
+  --hero-color: #1abc9c;
+  --social-color: #3a546d;
+  --portfolio-text-color: #2b3e50;
+}
+/* [class^="col"] {
+  border: 2px solid white;
+} */
+
+/* **************************
+RESET RULES
+************************** */
+ul,
+li,
+menu {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* **************************
+LAYOUT
+************************** */
+.scb-navbar,
+.scb-footer {
+  background-color: var(--nav-color);
+}
+.scb-hero,
+.scb-about {
+  background-color: var(--hero-color);
+}
+.sbc-portfolio,
+.scb-contact {
+  background-color: white;
+}
+.sbc-info {
+  background-color: var(--social-color);
+}
+/* **************************
+NAV BAR
+************************** */
+.scb-navbar {
+  background-color: var(--nav-color);
+  font-weight: 700;
+}
+.navbar-toggler {
+  border: 1px solid white;
+}
+/* **************************
+HERO
+************************** */
+.scb-hero,
+.scb-about,
+.sbc-info,
+.scb-footer {
+  color: white;
+}
+.scb-avatar-h2,
+.scb-portfolio-h2,
+.scb-about-h2 {
+  font-size: 2.5rem;
+}
+.scb-avatar {
+  width: 350px;
+}
+.scb-star {
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+}
+.scb-star::before {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  width: 350%;
+  height: 3px;
+  bottom: 30px;
+  left: 35px;
+  border-radius: 999px;
+}
+.scb-star::after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  width: 350%;
+  height: 3px;
+  top: 15px;
+  right: 35px;
+  border-radius: 999px;
+}
+
+/* **************************
+PORTFOLIO
+************************** */
+.sbc-portfolio,
+.scb-contact {
+  color: var(--portfolio-text-color);
+}
+/* **************************
+ABOUT
+************************** */
+.btn-outline-primary {
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+}
+.btn-outline-primary:hover {
+  color: black;
+  background-color: white;
+}
+.btn-outline-primary:active {
+  background-color: ;
+}
+
+/* **************************
+CONTACT
+************************** */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers (Safari, Edge, Google Chrome, Opera 15+) */
+  color: black;
+}
+.scb-input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.scb-submit {
+  background-color: var(--hero-color);
+  color: white;
+  border: none;
+}
+.scb-submit:hover {
+  background-color: green;
+}
+
+/* **************************
+SOCIAL
+************************** */
+.scb-social {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+  align-items: center;
+}
+.scb-social:hover {
+  border: 3px solid #2c3e50;
+}
+
+/* **************************
+FOOTER
+************************** */
+
+.scb-sub-text-footer {
+  display: block;
+  text-transform: none;
+}
+.scb-color {
+  color: #1abc9c;
+}
