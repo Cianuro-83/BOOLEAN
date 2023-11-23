@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(3, 49, 3);
+}
+
+.scb-container {
+  border: 2px solid greenyellow;
+  /* background-color: aqua; */
+}

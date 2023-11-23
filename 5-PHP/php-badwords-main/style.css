@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.php {
+  flex-direction: column;
+  margin-top: 30%;
+}
+h2 {
+  color: red;
+  text-align: center;
+}
+span {
+  color: white;
+}
+p {
+  text-align: center;
+}
