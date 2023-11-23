@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolzapp</title>
+    <!-- BOOTSTRAP 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/luxon.min.js"></script>
+    <!-- FONTAWESOME FREE -->
+    <script src="https://kit.fontawesome.com/6b35d32b47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- START VUE CONTAINER -->
+    <div id="app">
+        <div class="container scb-container scb-debug">
+            <!-- **************************
+        BARRA SUPERIORE
+        ************************** -->
+            <div class="row">
+                <div
+                    class="col-4 scb-debug scb-top-template d-flex justify-content-between align-items-center cianuro scb-aside">
+                    <!-- USER SPACE: AVATAR -->
+                    <div class="">
+                        <img class="avatar-cianuro scb-debug" src="./img/cianuro.png" alt="">
+                        <span class="ps-2 scb-debug fw-medium">Cianuro</span>
+                    </div>
+                    <!-- USER SPACE: ICON -->
+                    <div>
+                        <i class="fa-solid fa-circle-notch scb-icon scb-debug"></i>
+                        <i class="fa-solid fa-message scb-icon scb-icon-central scb-debug"></i>
+                        <i class="fa-solid fa-ellipsis-vertical scb-icon scb-debug"></i>
+
+                    </div>
+                </div>
+                <div class="col-8 scb-debug scb-top-template d-flex justify-content-between align-items-center">
+                    <!-- CHAT SPACE: AVATAR  -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img class="avatar scb-debug" :src="filtra[this.currentChat].avatar" alt="">
+                        <div class="scb-debug">
+                            <span class="ps-2 d-block nome-contatto-ospite"
+                                class="ps-2 fw-medium">{{filtra[currentChat].name}}</span>
+                            <span class="ps-2 ultimo-accesso">Ultimo accesso oggi alle 12</span>
+                        </div>
+                    </div>
+                    <!-- CHAT SPACE: ICON -->
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass scb-icon scb-debug"></i>
+                        <i class="fa-solid fa-paperclip scb-icon scb-icon-central scb-debug"></i>
+                        <i class="fa-solid fa-ellipsis-vertical scb-icon scb-debug"></i>
+
+                    </div>
+                </div>
+            </div>
+            <!-- **************************
+            BODY TEMPLATE
+            ************************** -->
+            <div class="row scb-body-template ">
+                <div class="col-4 scb-debug d-flex flex-column scb-body-container">
+                    <!-- **************************
+                    LEFT SIDE
+                    ************************** -->
+                    <!-- NOTIFICHE -->
+                    <div class="scb-notifiche scb-debug d-flex align-items-center">
+                        <i class="fa-solid fa-bell-slash scb-campana-notifiche scb-debug"></i>
+                        <div class="scb-debug">
+                            <span class="ps-2 d-block" class="ps-2">Ricevi notifiche di nuovi messaggi</span>
+                            <span class="ps-2 scb-attiva-notifiche">Attiva notifiche desktop</span>
+                        </div>
+                    </div>
+                    <!-- BARRA DI RICERCA -->
+                    <div class="scb-barra-di-ricerca scb-debug">
+                        <div class="input-group">
+                            <span class="input-group-text input-cerca" id="basic-addon1"><i
+                                    class="fa-solid fa-magnifying-glass scb-icon scb-debug lente-ricerca"></i></span>
+                            <input type="text" class="form-control input-cerca"
+                                placeholder="Cerca o inizia una nuova chat" aria-label="text"
+                                aria-describedby="basic-addon1" v-model="cerca" @keyup="inputCercaContatto()"
+                                @keydown.enter=" resetCerca()">
+                            <i class="fa-regular fa-circle-xmark" @click=" resetCerca()"></i>
+                        </div>
+                    </div>
+                    <!-- LISTA CONTATTI -->
+                    <div class="scb-lista overflow-y-scroll">
+                        <div class="elenco-contatti scb-debug " v-for="(contatto,i) in filtra"
+                            @click="selezionaContattoAttivo(i)" :class="this.currentChat===i? `active` : ``">
+
+                            <!-- CONTENITORE CONTATTO  -->
+                            <div class=" scb-contatti d-flex scb-debug">
+                                <!-- NOME E ULTIMO ACCESSO CONTATTO  -->
+                                <div class="d-flex">
+                                    <img class="avatar-contatti scb-debug" :src="contatto.avatar" alt="">
+                                    <div class="scb-debug scb-scheda-nome-contatto">
+                                        <span class="d-block ps-2" class="ps-2 scb-nome-contatto"
+                                            style="font-weight: bold;">{{contatto.name}}
+                                        </span>
+                                        <span class="ps-2 ultimo-messagio-inviato">Ultimo messaggio inviato</span>
+                                    </div>
+                                </div>
+                                <!-- ORA RICEZIONE MESSAGGIO -->
+                                <div class="scb-ora-ricezione">
+                                    <span class="scb-debug">{{message}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- **************************
+                RIGHT  OR CHAT SIDE
+                ************************** -->
+                <div class="col-8 scb-debug d-flex flex-column p-0">
+
+                    <!-- CHAT -->
+
+                    <div class="scb-chat scb-debug overflow-y-scroll d-flex flex-column">
+                        <div class=" ms-5 me-5" v-for="(messaggi,index) in filtra[currentChat].messages"
+                            :class="messaggi.status=== `sent` ? `messaggio-inviato` :`messaggio-ricevuto`">
+                            <p>{{messaggi.message}}</p>
+                            <p class="orario-messaggio"> {{this.oraInvioMessaggio}}</p>
+                        </div>
+
+                    </div>
+                    <!-- SCRIVI MESSAGGIO -->
+                    <div class="scb-scrivi-messaggio scb-debug d-flex justify-content-between align-items-center">
+                        <div class="scb-debug">
+                            <i class="fa-regular fa-face-smile scb-icone-scrivi-messaggio"></i>
+                        </div>
+                        <div class="scb-campo-scrivi scb-debug">
+                            <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="text"
+                                aria-describedby="basic-addon1" v-model="inviaMessaggio"
+                                @keydown.enter="nuovoMessaggio([currentChat])">
+                        </div>
+                        <div class="scb-debug">
+                            <i class="fa-solid fa-microphone scb-icone-scrivi-messaggio"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- END VUE CONTAINER -->
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- MY JAVA SCRIPT -->
+    <script src="./js/scb-script.js"></script>
+
+</body>
+
+</html>
