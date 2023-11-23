@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+img{
+    max-width: 100%;
+    height: 90px;
+    
+}
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+a{
+    text-decoration: none;
+    color:aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.title{
+    color: red;
+    font-family:'Fredoka One';
+    font-size: 50px;
+}
+
+.abstract{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 45px;
+}
+
+.title, .abstract{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.team1, .team2, .team3, .team4, .team5, .team6{
+    width: 30%;
+    background-color:black;
+    float: left;
+    margin-right: 5%;
+    color: white;
+    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.225);
+}
+.team3, .team6{
+    margin-right: 0;
+}
+.riga2{
+    margin-top: 30px;
+}
+.team-name{
+    font-family:'Fredoka One';
+}
+.dati{
+    display: block;
+    float: right;
+    margin-right: 25px;
+    
+
+}
+
+.team-name{
+    margin-top: 5px;
+}
+
+.team-rule{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.team-mail{
+    display: inline-block;
+}

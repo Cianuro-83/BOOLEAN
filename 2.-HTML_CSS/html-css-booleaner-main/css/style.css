@@ -1,0 +1,67 @@
+/* per ottenere l'esercizio bonus decommentare il selettore main sottostante ed il margin-left con % delle classe svg */
+/* main{
+    margin-left: 15%;
+    margin-right: 15%;
+} */
+
+.box-intestazione{
+    background-color: #4DA0FF;  
+    background-image: url(../img/pattern.png); 
+    background-size: 30%;
+    height: 100px;
+}
+.svg{
+    margin-top: 30px;
+    margin-left: 10px;
+    /* margin-left: 15%; */
+}
+.credit{
+    font-size: x-large;
+}
+.autore {
+    color: #6FC7EE;
+}
+
+.sottolineato{
+    background-color:#FFFD00 ;
+}
+
+ul{
+/* padding-left:1%; */
+margin-left: -30px;
+
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color:#1FA9E5 ;
+    color: white;
+    text-align: left;
+ 
+}
+.tr-color{
+    background-color:#B1E5F2 ;
+  
+}
+.pc{
+width: 350px;
+height: 200px;
+background-image: url(../img/monitor.jpg);
+background-repeat: no-repeat;
+color: white;
+}
+
+.code{
+    width: 350px;
+    height: 350px;
+    background-image: url(../img/graph.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.over-text{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+}

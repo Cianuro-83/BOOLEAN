@@ -1,0 +1,144 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #F6F8F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testata{
+    background-color: white;
+    padding-left: 50px;
+    
+}
+
+.logo{
+    vertical-align: middle;
+}
+.titolo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contenitore{
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: white;
+    margin-top: 20px;
+    height: 650px;
+}
+
+.pulsanti{
+    background-color: white;
+    padding: 10px;
+    font-size: small;
+    border-bottom: 1px solid grey; 
+}
+
+.task{
+    background-color: #46ACF1;
+    border-radius: 5px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.section{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #d3d5d6;
+    color:  #d3d5d6;
+
+}
+
+.explode{
+    vertical-align: middle;
+}
+
+.activity{
+    vertical-align: middle;
+    display: inline;
+    font-size: 15px;
+}
+
+.new-task{
+    margin-left: 60px;
+    margin-top: 1px;
+    line-height: 3;    
+}
+
+.Today{
+    margin-left: 60px;
+    margin-top: 1px; 
+    line-height: 3;  
+}
+
+.Upcoming{
+    margin-left: 60px;
+    margin-top:1px; 
+    line-height: 3;  
+}
+
+.check{
+    color: greenyellow;
+    border: 1px solid greenyellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.uncheck{
+    color: red;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.blu{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #46ACF1;
+    border: none;
+    color: white;
+}
+
+.viola{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #9C72E4;
+    border: none;
+    color: white;
+}
+
+.verde-1{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #64C0A9;
+    border: none;
+    color: white;
+}
+
+.arancione{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #F29E33;
+    border: none;
+    color: white;
+}
+
+.fuxia{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #D863A1;
+    border: none;
+    color: white;
+}
+
+.verde-2{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #B0C826;
+    border: none;
+    color: white;
+}
