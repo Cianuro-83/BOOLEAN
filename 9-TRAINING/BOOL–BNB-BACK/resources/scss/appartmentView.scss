@@ -1,0 +1,9 @@
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
